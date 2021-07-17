@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee(ex)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <nav class="header__navbar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link-item separate" href="">Kênh Người Bán</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-item separate" href="">Trở thành Người bán Shopee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-item separate" href="">Tải ứng dụng</a>
+                        <div class="qr-box">
+                            <a href=""><img class="qr-image" src="./assets/img/qr-code.png" alt=""></a>
+                            <div class="app-list">
+                                <div class="app-item">
+                                    <a href=""> <img src="./assets/img/chplay.png" alt=""></a>
+                                </div>
+                                <div class="app-item">
+                                    <a href=""><img src="./assets/img/appstore.png" alt=""></a>
+                                </div>
+                                <div class="app-item">
+                                    <a href=""><img src="./assets/img/appgalley.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        Kết nối
+                        <i title="Kết nối Facebook" class="fab fa-facebook"></i>
+                        <i title="Kết nối Instagram" class="fab fa-instagram"></i>
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link-item" href="">
+                            <i class="far fa-bell"></i>
+                            Thông Báo
+                            <span class="notify-number">1</span>
+                        </a>
+                        <div class="notification-box">
+                            <div class="notify-heading">Thông Báo Mới Nhận</div>
+                            <ul class="notify-list">
+                                <li class="notify-item not-read">
+                                    <a href="">
+                                        <div class="notify-img">
+                                            <img src="./assets/img/shopeepay.png" alt="">
+                                        </div>
+                                        <div class="notify-body">
+                                            <p class="notify-name">Ưu đãi 50K tặng bạn!</p>
+                                            <p class="notify-desc">ShopeePay tặng bạn Voucher giảm 50K cho đơn Nạp thẻ &
+                                                Dịch vụ trên Shopee. Voucher không áp dụng cho 1 số sản phẩm nhất định.
+                                                ⚡ Nhanh tay mở ví. Shopping hết ý! Mã đã có sẵn trong ví voucher, mở Ví
+                                                ShopeePay để dùng ngay. HSD: 23h59 20/07/2021</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notify-item">
+                                    <a href="">
+                                        <div class="notify-img">
+                                            <img src="./assets/img/laco house.jpg" alt="">
+                                        </div>
+                                        <div class="notify-body">
+                                            <p class="notify-name">Phạm Văn Huy ơi, chia sẻ trải nghiệm cùng Shopee nhé!
+                                            </p>
+                                            <p class="notify-desc">Hãy chia sẻ trải nghiệm mua sắm của bạn đối với sản
+                                                phẩm TÚI ĐEO CHÉO NỮ MINI TÚI XÁCH MINI DA PU TRƠN XINH XẮN T05</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notify-item">
+                                    <a href="">
+                                        <div class="notify-img">
+                                            <img src="./assets/img/noi that.jpg" alt="">
+                                        </div>
+                                        <div class="notify-body">
+                                            <p class="notify-name">Nội thất sale to: Giảm 50% + Deal 0Đ</p>
+                                            <p class="notify-desc">Giường gỗ Keo, Bộ bàn ăn Phillip. Giảm cực chill đến
+                                                50%. Thêm nhiều deal 0Đ xịn sò. Đa dạng deal hot - Quẹo lựa chốt đơn!
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notify-item">
+                                    <a href="">
+                                        <div class="notify-img">
+                                            <img src="./assets/img/o nha khong kho.png " alt="">
+                                        </div>
+                                        <div class="notify-body">
+                                            <p class="notify-name">Ở nhà không khó, Sài Gòn ơi.</p>
+                                            <p class="notify-desc">Tặng bạn voucher GIẢM ĐẾN 40K, dùng để mua sắm bách
+                                                hóa và mỹ phẩm tại gia. Số lượng có hạn. Kiểm tra ví và mua ngay!!</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notify-item">
+                                    <a href="">
+                                        <div class="notify-img">
+                                            <img src="./assets/img/giamgia.jpg" alt="">
+                                        </div>
+                                        <div class="notify-body">
+                                            <p class="notify-name">Chấn động! Hàng hiệu giảm giá sập sàn</p>
+                                            <p class="notify-desc">Deal hot giảm chạm sàn đến 50%. 9H: Săn voucher giảm
+                                                mạnh đến 500K. Voucher của shop từ 30%-50%. Deal cực hời - Vào sắm ngay!
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                </li>
+                            </ul>
+                            <div class="notify-footer">
+                                <h3><a href="">Xem tất cả</a></h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-item" href=""><i class="far fa-question-circle"></i>Hỗ Trợ</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link-item  separate" href="" onclick="signUp()">Đăng ký</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-item" href="">Đăng Nhập</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link-item" href="">
+                            <img class="user-avatar" src="./assets/img/user.jpg" alt="">
+                            huyglacial
+                        </a>
+                        <div class="account-box">
+                            <ul class="account-list">
+                                <li class="account-item">
+                                    <a href="">Tài Khoản Của Tôi</a>                
+                                </li>
+                                <li class="account-item">
+                                    <a href="">Đơn Mua</a>
+                                </li>
+                                <li class="account-item up-separate">
+                                    <a href="#" onclick="logOut()">Đăng Xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__main">
+                <div class="shopee-logo">
+                    <a href=""><img src="./assets/img/shopee-logo.png" alt=""></a>        
+                </div>
+                <div class="search-box">
+                    <div class="search-input">
+                        <div class="search-input-wrap">
+                            <input type="text" placeholder="Mum's Club - Quà 5 triệu">
+                            <div class="history-box">
+                                <h3>Lịch sử Tìm kiếm</h3>
+                                <ul class="history-list">
+                                    <li class="history-item">
+                                        <a href="">Giảm đến 70k toàn sàn</a>
+                                    </li>
+                                    <li class="history-item">
+                                        <a href="">Mum's Club - Quà 5 triệu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-select">
+                            <span>Trong shop</span><i class="fas fa-angle-down"></i>
+                            <ul class="search-options">
+                                <li class="search-option">Trong shop<i class="fas fa-check"></i></li>
+                                <li class="search-option">
+                                    Ngoài shop
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="search-history">
+                        <a href="">Váy</a><a href="">Bông Tẩy Trang</a><a href="">Balo</a><a href="">Dép Nữ</a><a href="">Quần</a><a href="">Dép</a><a href="">Son</a><a href="">Áo Phông</a>
+                    </div>
+                </div>
+                <div class="cart-logo">
+                    <a href="">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-number">4</span>
+                        <div class="product-box">
+                            <img src="./assets/img/no-product.png" alt="">
+                            <div class="cart-box">
+                                <h3>Sản Phẩm Mới Thêm</h3>
+                                <ul class="cart-list">
+                                    <li class="cart-item">
+                                        <img src="./assets/img/tui.jpg" alt="">
+                                        <div class="cart-info">
+                                            (Size 10cm )MD73- TÚI MINI ĐEO VAI HOT HIT 2021
+                                        </div>
+                                        <div class="cart-price">
+                                            <span><sup><u>đ</u></sup>52.000</span>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="./assets/img/tui1.jpg" alt="">
+                                        <div class="cart-info">
+                                            [Hot Trend] Túi Mini, Túi Đéo Chéo Chuỗi Ngọc, Đựng Son Môi, Tai Nghe, Đi Chơi Dự Tiệc Phong Cách Hàn 2021 TDN88
+                                        </div>
+                                        <div class="cart-price">
+                                            <span><sup><u>đ</u></sup>227.000</span>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="./assets/img/vi.jpg" alt="">
+                                        <div class="cart-info">
+                                            [Hot Trend] Ví Cầm Tay Nữ, Ví Da Forever Young Siêu Xinh, Có Ngăn Đựng Tiền Xu 5 Màu Rẻ Và Đẹp VD81
+                                        </div>
+                                        <div class="cart-price">
+                                            <span><sup><u>đ</u></sup>60.000</span>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <img src="./assets/img/bang ron.jpg" alt="">
+                                        <div class="cart-info">
+                                            [Phụ Kiện Hot] Băng Đô Rửa Mặt Turban, Bờm Tóc Hàn Quốc Cho Bạn Nữ Cài Tóc Xinh Đẹp, Chất Liệu Vải Nhung HOT
+                                        </div>
+                                        <div class="cart-price">
+                                            <span><sup><u>đ</u></sup>3.000</span>
+                                        </div>
+                                    </li>                
+                                </ul>
+                                <button class="cart-view--btn btn__bg--orange">
+                                    Xem Giỏ Hàng
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+      <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2">                        
+                        <nav class="category">
+                            <h3 class="category-heading">
+                                <i class="fas fa-list-ul"></i>
+                                Danh Mục 
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#">Sản Phẩm</a>
+                                </li>
+                                <li class="category-item active">
+                                    <a href="#">Túi đeo chéo & Túi đeo vai</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Túi tote</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Ví dự tiệc & Ví cầm tay</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Túi Ví Nam</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Túi quai xách</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Khác</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Phụ kiện túi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Túi đeo hông & Túi đeo ngực</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#">Nhà cửa & Đời sống</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__col-10">
+                        <div class="filter-box">
+                            <div class="filter-item">
+                                <span class="filter-name">Sắp xếp theo</span>
+                                <button class="primary-btn">Phổ Biến</button>
+                                <button class="normal-btn">Mới Nhất</button>
+                                <button class="normal-btn">Bán Chạy</button>
+                                <div class="price-option">
+                                    Giá
+                                    <i class="fas fa-chevron-down"></i>
+                                    <ul class="price__option-box">
+                                        <li class="price__option-item">Giá: Thấp đến Cao</li>
+                                        <li class="price__option-item">Giá: Cao đến Thấp</li>
+                                    </ul>            
+                                </div>
+                            </div>
+                            <div class="fiter-item">
+                                <span class="current-page">2</span><span class="total-page">/4</span>
+                                <button class="mov__page-btn"><i class="fas fa-chevron-left"></i></button>
+                                <button class="mov__page-btn"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="grid__row">
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product1.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>                                
+                                    </div>
+                                    <span class="favourite-lable">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                        
+                                    </span>
+                                    <div class="discount-lable">
+                                        <span class="discount-per">
+                                            30%
+                                        </span>
+                                        <span class="disc-name">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product2.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>
+                                        
+                                        <span class="favourite-lable">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                            
+                                        </span>
+                                        <div class="discount-lable">
+                                            <span class="discount-per">
+                                                30%
+                                            </span>
+                                            <span class="disc-name">
+                                                GIẢM
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product3.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>
+                                        
+                                        <span class="favourite-lable">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                            
+                                        </span>
+                                        <div class="discount-lable">
+                                            <span class="discount-per">
+                                                30%
+                                            </span>
+                                            <span class="disc-name">
+                                                GIẢM
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product4.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>
+                                        
+                                        <span class="favourite-lable">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                            
+                                        </span>
+                                        <div class="discount-lable">
+                                            <span class="discount-per">
+                                                30%
+                                            </span>
+                                            <span class="disc-name">
+                                                GIẢM
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product5.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group like-action">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>                                        
+                                    </div>
+                                    <span class="favourite-lable">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                        
+                                    </span>
+                                    <div class="discount-lable">
+                                        <span class="discount-per">
+                                            30%
+                                        </span>
+                                        <span class="disc-name">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product5.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group like-action">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>                                        
+                                    </div>
+                                    <span class="favourite-lable">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                        
+                                    </span>
+                                    <div class="discount-lable">
+                                        <span class="discount-per">
+                                            30%
+                                        </span>
+                                        <span class="disc-name">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product5.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group like-action">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>                                        
+                                    </div>
+                                    <span class="favourite-lable">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                        
+                                    </span>
+                                    <div class="discount-lable">
+                                        <span class="discount-per">
+                                            30%
+                                        </span>
+                                        <span class="disc-name">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product5.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group like-action">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>                                        
+                                    </div>
+                                    <span class="favourite-lable">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                        
+                                    </span>
+                                    <div class="discount-lable">
+                                        <span class="discount-per">
+                                            30%
+                                        </span>
+                                        <span class="disc-name">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product5.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group like-action">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>                                        
+                                    </div>
+                                    <span class="favourite-lable">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                        
+                                    </span>
+                                    <div class="discount-lable">
+                                        <span class="discount-per">
+                                            30%
+                                        </span>
+                                        <span class="disc-name">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__col-2-4">
+                                <a class="product-item" href="#">
+                                    <img class="product__item-img" src="./assets/img/product5.jpg" alt="">
+                                    <div class="product-info">
+                                        <h5 class="product-name">
+                                            [Mã COSLXBD17 giảm 10% đơn 600K] Máy Rửa Mặt Và Mát Xa Da Mặt Halio Original
+                                        </h5>
+                                        <div class="voucher-box">
+                                            <div class="voucher-ticket"><span>Giảm <u>đ</u>70k</span></div>
+                                            <div class="buy-invite">Mua để nhận quà</div>
+                                        </div>
+                                        <div class="product__price-group">
+                                            <span class="old-price"><strike><sup>đ</sup>960.000</strike></span>
+                                            <span class="new-price"><sup>đ</sup>710.000</span>
+                                            <span><i class="fas fa-truck"></i></span>
+                                        </div>
+                                        <div class="product__rating-group like-action">
+                                            <i class="unlike far fa-heart"></i>
+                                            <i class="liked fas fa-heart"></i>
+                                            <div class="rating-star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="product-bought">Đã bán 633</span>
+                                        </div>
+                                        <div class="product-origin">TP.Hồ Chí Minh</div>                                        
+                                    </div>
+                                    <span class="favourite-lable">
+                                        <i class="fas fa-check"></i>
+                                        <span>Yêu thích</span>
+                                        
+                                    </span>
+                                    <div class="discount-lable">
+                                        <span class="discount-per">
+                                            30%
+                                        </span>
+                                        <span class="disc-name">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="pagination-list">
+                            <li class="pagination-item">
+                                <a href=""><i class="fas fa-chevron-left"></i></a>
+                            </li>
+                            <li class="pagination-item active">
+                                <a href="">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href=""><i class="fas fa-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>               
+        </div>
+
+        <div class="break-page"></div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h5>
+                        <a href="">Trung Tâm Trợ Giúp</a>
+                        <a href="">Shopee Blog</a>
+                        <a href="">Shopee Mall</a>
+                        <a href="">Hướng Dẫn Mua Hàng</a>
+                        <a href="">Hướng Dẫn Bán Hàng</a>
+                        <a href="">Thanh Toán</a>
+                        <a href="">Shopee Xu</a>
+                        <a href="">Vận Chuyển</a>
+                        <a href="">Trả Hàng & Hoàn Tiền</a>
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__heading">VỀ SHOPEE</h5>product__rating-group                        
+                        <a href="">Giới Thiệu Về Shopee Việt Nam</a>
+                        <a href="">Tuyển Dụng</a>
+                        <a href="">Điều Khoản Shopee</a>
+                        <a href="">Chính Sách Bảo Mật</a>
+                        <a href="">Chính Hãng</a>
+                        <a href="">Kênh Người Bán</a>
+                        <a href="">Flash Sales</a>
+                        <a href="">Chương Trình Tiếp Thị Liên Kết Shopee</a>
+                        <a href="">Liên Hệ Với Truyền Thông</a>
+                    </div>
+                    <div class="grid__col-2-4">
+                        
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h5>                       
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin"></i>
+                            Linkedln
+                        </a>                        
+                    </div>
+                    <div class="grid__col-2-4">
+                        <h5 class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h5>
+                        <div class="app__footer">
+                            <div class="footer__qr-code">
+                                <a href=""><img src="./assets/img/qr-code.png" alt=""></a>
+                            </div>
+                            <div class="footer__app-download">
+                                <a href=""><img src="./assets/img/chplay.png" alt=""></a>
+                                <a href=""><img src="./assets/img/appstore.png" alt=""></a>
+                                <a href=""><img src="./assets/img/appgalley.png" alt=""></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="footer-origin">
+                    <p>© 2021 Shopee. Tất cả các quyền được bảo lưu.</p>
+                    <p>Quốc gia & Khu vực:
+                        <span>Singapore</span>
+                        <span>Indonesia</span>
+                        <span>Đài Loan</span>
+                        <span>Thái Lan</span>
+                        <span>Malaysia</span>
+                        <span>Việt Nam</span>
+                        <span>Philippines</span>
+                        <span>Brazil</span>
+                        <span>México</span>
+                        <span>Colombia</span>
+                        <span>Chile</p></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- modal layout -->
+    <!-- sign up -->
+     <div class="modal-layout">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-head">
+                    <h3>Đăng Ký</h3>
+                    <button class="btn btn--text--orange">Đăng nhập</button>
+                </div>
+                <div class="modal-form">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <input type="text" name="phone" placeholder="Số điện thoai" id="telephone">
+                        </div>
+                        <div class="input-item">
+                            <input type="password" name="password" placeholder="Nhập mật khẩu của bạn" id="password">
+                        </div>
+                        <div class="input-item otp-form">
+                            <input type="text" name="otp" id="" placeholder="Mã xác minh">
+                            <button class="otp-btn">Gửi Mã xác minh</button>
+                        </div>
+                    </div>
+                    <div class="policy-box">
+                        <p class="policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Shopee về <a href="">Điều khoản dịch vụ</a> $ <a href="">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="modal__form-btns">
+                        <button class="btn" onclick="closeModal()">TRỞ LẠI</button>
+                        <button class="btn btn__bg--orange">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="social-btns">
+                <button class="fb-btn">
+                    <i class="fab fa-facebook-square"></i>
+                    Kết nối với Facebook
+                </button>
+                <button class="gg-btn">
+                    <i class="fab fa-google"></i>
+                    Kết nối với Google
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
